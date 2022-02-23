@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import image from './photo1.jfif';
+import imageTwo from './photo2.jfif';
+import { SelfCareList } from './SelfCareList.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="container">
+          <img src={image} width="400px"alt="photoOne"/>
+      </div>
+      
+      <div className="container">
+          <h1>Self Care List</h1>
+      </div>
+
+     <SelfCareList/>
+
+      <div className="container">
+          <img src={imageTwo} width="400px" alt="PhotoTwo"/>
+      </div>
+
     </div>
   );
 }
